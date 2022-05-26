@@ -30,6 +30,11 @@ class API_VK():
         pprint(response.json()['response']['items'])
         return response.json
 
+    def info_group(self):
+        #using list comprehenchion
+        pass
+
 if __name__ == '__main__':
     User1 = API_VK()
     User1.resp()
+    # User1.info_group()
