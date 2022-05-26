@@ -5,13 +5,18 @@ import numbers
 
 try:
     # Подключение к существующей базе данных
-    user, password, host = input('Enter user: '), input('Enter pqssword: '), input('Enter host: ')
-    port, database = input('Enter port: '), input('Enter database: ')
-    connection = psycopg2.connect(user=user,
-                                  password=password,
-                                  host=host,
-                                  port=port,
-                                  database=database)
+    connection = psycopg2.connect(user="maxim",
+                                  password="427310",
+                                  host="127.0.0.1",
+                                  port="5432",
+                                  database="maxim")
+    # user, password, host = input('Enter user: '), input('Enter pqssword: '), input('Enter host: ')
+    # port, database = input('Enter port: '), input('Enter database: ')
+    # connection = psycopg2.connect(user=user,
+    #                               password=password,
+    #                               host=host,
+    #                               port=port,
+    #                               database=database)
     # Курсор для выполнения операций с базой данных
     cursor = connection.cursor()
     # Распечатать сведения о PostgreSQL
